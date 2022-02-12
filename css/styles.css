@@ -1,0 +1,327 @@
+:root {
+    --primary-text-color: #757575;
+    --title-text-color:#212121;
+    --accent-color:#2196F3;
+    --primary-white-color:#FFFFFF;
+    --logo-black-color:#000000;
+    --hero-background-color:#2F303A;
+    --hero-btm-focus:#188CE8;
+    --team-background-color:#F5F4FA;
+    --footer-email-phone: rgba(255, 255, 255, 0.6);
+    }
+
+body {
+    background-color: var(--primary-white-color);
+    color:var(--primary-text-color) ;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul, ol, p{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+img {
+    display: flex;
+}
+
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+/* ------START NAVIGATION------ */
+
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.header{
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
+
+.header-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navigation{
+    display: flex;
+    align-items: center;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+}
+
+.header-contacts{
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    color: var(--logo-black-color);
+    font-family: Raleway;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    margin-right: 93px;
+}
+
+.logo-color-part {
+    color: var(--accent-color);
+}
+
+.nav-link{
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    }
+.nav-link:hover, .nav-link:focus {
+    color: var(--accent-color);
+}
+
+.current {
+    color: var(--accent-color);
+}
+
+.contacts {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
+    }
+
+.contacts:hover, .contacts:focus {
+    color: var(--accent-color);
+}
+
+.nav-list-item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.contacts-email{
+    margin-right: 50px;
+}
+
+
+/* ------END NAVIGATION------ */
+
+/* ------START HERO------ */
+
+.hero-container{
+    padding-top: 200px;
+    padding-bottom: 200px; 
+    /* display: flex;  
+    flex-direction: column;
+    justify-content: center;
+
+
+
+      */
+    
+}
+
+.hero {
+    background-color: var(--hero-background-color);
+}
+.main-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--primary-white-color);
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.hero-buttom {
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+    cursor: pointer;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid var(--logo-black-color);
+
+}
+
+.hero-buttom:hover, .hero-buttom:focus{
+    background-color: var(--hero-btm-focus)
+}
+/* ------END HERO------ */
+
+/* ------START FEATURE------ */
+.feature-title {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--title-text-color);
+}
+
+.feature-description {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+/* ------END FEATURE------ */
+
+.direction-item{
+    display: flex;
+    justify-content: space-between;
+}
+
+.feature-container-item{
+    display: flex;
+}
+.direction-container{
+    padding-top: 0px;
+}
+
+/* ------START TEAM------ */
+.team{
+    background-color:var(--team-background-color);
+}
+
+.team-title{
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.team-card-item{
+    display: flex;
+    justify-content: space-between;
+}
+
+.team-card{
+    background-color: var(--primary-white-color);
+}
+
+.team-member-photo{
+    margin-bottom: 30px;
+}
+
+.direction-title, .team-title, .feature-main-title, .portfolio-title {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.team-member {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.member-job{
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    text-align: center;
+    margin-bottom: 30px;
+}
+/* ------END TEAM------ */
+
+/* ------START FOOTER------ */
+.footer{
+    background-color: var(--hero-background-color);
+}
+.footer-address{
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--primary-white-color);
+    font-style: normal;
+}
+
+.footer-email, .footer-phone {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--footer-email-phone);
+}
+
+.footer-email:hover, .footer-email:focus, .footer-phone:hover, .footer-phone:focus, .footer-address:hover, .footer-address:focus {
+    color: var(--accent-color);    
+}
+/* ------END FOOTER------ */
+
+/* ------START PORTFOLIO------ */
+.portfolio-button {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+    background-color: var(--team-background-color);
+    cursor: pointer;
+}
+
+.portfolio-button:hover, .portfolio-button:focus {
+    background-color: var(--accent-color);
+    color: var(--primary-white-color);
+}
+
+.portfolio-cards{
+    background-color: var(--primary-white-color);
+}
+
+.project-name {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color:var(--title-text-color)
+}
+
+.project-type{
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+}
+/* ------END PORTFOLIO------ */
