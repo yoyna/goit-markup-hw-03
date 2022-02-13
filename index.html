@@ -40,21 +40,21 @@
 
         <section class="feature">
             <div class="feature-container container section">
-                <h2 class="feature-main-title">Наши преимущества</h2>
+                <h2 class="feature-main-title visually-hidden">Наши преимущества</h2>
                 <ul class="feature-container-item list">
-                    <li>
+                    <li class="feature-container-list">
                         <h3 class="feature-title">Внимание к деталям</h3>
                         <p class="feature-description">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
                     </li>
-                    <li>
+                    <li class="feature-container-list">
                         <h3 class="feature-title">Пунктуальность</h3>
                         <p class="feature-description">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
                     </li>
-                    <li>
+                    <li class="feature-container-list">
                         <h3 class="feature-title">Планирование</h3>
                         <p class="feature-description">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
                     </li>
-                    <li>
+                    <li class="feature-container-list">
                         <h3 class="feature-title">Современные технологии</h3>
                         <p class="feature-description">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                     </li>
@@ -66,9 +66,9 @@
             <div class="direction-container container section">
                 <h2 class="direction-title">Чем мы занимаемся</h2>
                 <ul class="direction-item list">
-                    <li><img src="./img/program.jpg" alt="Написание программ" width="370" height="294"></li>
-                    <li><img src="./img/moby.jpg" alt="Создание мобильных приложений" width="370" height="294"></li>
-                    <li><img src="./img/graph.jpg" alt="Графика" width="370" height="294"></li>
+                    <li class="direction-item-list"><img src="./img/program.jpg" alt="Написание программ" width="370"></li>
+                    <li class="direction-item-list"><img src="./img/moby.jpg" alt="Создание мобильных приложений" width="370"></li>
+                    <li class="direction-item-list"><img src="./img/graph.jpg" alt="Графика" width="370"></li>
                 </ul>
             </div>
             
@@ -79,24 +79,36 @@
                     <h2 class="team-title">Наша команда</h2>
                     <ul class="list team-card-item">
                         <li class="team-card">
-                            <img class="team-member-photo" src="./img/demyanenko.jpg" alt="Игорь Демьяненко" width="270" height="260">
-                            <h3 class="team-member">Игорь Демьяненко</h3>
-                            <p lang="en" class="member-job">Product Designer</p>
+                            <img class="team-member-photo" src="./img/demyanenko.jpg" alt="Игорь Демьяненко" width="270">
+                            <div class="team-member-wrapper">
+                                <h3 class="team-member">Игорь Демьяненко</h3>
+                                <p lang="en" class="member-job">Product Designer</p>
+                            </div>
+                            
                         </li>
                         <li class="team-card">
-                            <img class="team-member-photo" src="./img/repina.jpg" alt="Ольга Репина" width="270" height="260">
-                            <h3 class="team-member">Ольга Репина</h3>
-                            <p lang="en" class="member-job">Frontend Developer</p>
+                            <img class="team-member-photo" src="./img/repina.jpg" alt="Ольга Репина" width="270">
+                            <div class="team-member-wrapper">
+                                <h3 class="team-member">Ольга Репина</h3>
+                                <p lang="en" class="member-job">Frontend Developer</p>
+                            </div>
+                         
                         </li>  
                         <li class="team-card">                 
-                            <img class="team-member-photo" src="./img/tarasov.jpg" alt="Николай Тарасов" width="270" height="260">
-                            <h3 class="team-member">Николай Тарасов</h3>
-                            <p lang="en" class="member-job">Marketing</p>
+                            <img class="team-member-photo" src="./img/tarasov.jpg" alt="Николай Тарасов" width="270">
+                            <div class="team-member-wrapper">
+                                <h3 class="team-member">Николай Тарасов</h3>
+                                <p lang="en" class="member-job">Marketing</p>
+                            </div>
+                            
                         </li>
                         <li class="team-card">
-                            <img class="team-member-photo" src="./img/yermakov.jpg" alt="Михаил Ермаков" width="270" height="260">
-                            <h3 class="team-member">Михаил Ермаков</h3>
-                            <p lang="en" class="member-job">UI Designer</p>
+                            <img class="team-member-photo" src="./img/yermakov.jpg" alt="Михаил Ермаков" width="270">
+                            <div class="team-member-wrapper">
+                                <h3 class="team-member">Михаил Ермаков</h3>
+                                <p lang="en" class="member-job">UI Designer</p>
+                            </div>
+                            
                         </li>
                     </ul>
                 </div>
@@ -105,14 +117,16 @@
     </main>
 
     <footer class="footer">
-        <a href="/" class="logo link"><span class="logo-color-part">Web</span>Studio</a>
-        <address>
-            <ul class="list">
-                <li><a href="/" target="_blank" class="footer-address link">г. Киев, пр-т Леси Украинки, 26</a></li>
-                <li><a href="mailto:info@example.com" class="footer-email link">info@example.com</a></li>
-                <li><a href="tel:+380961111111" class="footer-phone link">+38 096 111 11 11</a></li>
-            </ul>
-        </address>
+        <div class="footer-container container">
+            <a class="footer-logo link logo" href="/"><span class="logo-color-part">Web</span>Studio</a>
+            <address>
+                <ul class="list">
+                    <li class="footer-contacts-item"><a href="/" target="_blank" class="footer-address link">г. Киев, пр-т Леси Украинки, 26</a></li>
+                    <li class="footer-contacts-item"><a href="mailto:info@example.com" class="footer-email link">info@example.com</a></li>
+                    <li class="footer-contacts-item"><a href="tel:+380961111111" class="footer-phone link">+38 096 111 11 11</a></li>
+                </ul>
+            </address>
+        </div>
     </footer>
 
 </body>
