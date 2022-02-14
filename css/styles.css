@@ -194,6 +194,7 @@ img {
 
 .feature-container-item{
     display: flex;
+    flex-wrap: wrap;
     margin-left: -30px;
     margin-top: -30px;
 }
@@ -225,6 +226,7 @@ img {
 /* ------START direction------ */
 .direction-item{
     display: flex;
+    flex-wrap: wrap;
     margin-left: -30px;
     margin-top: -30px;
 }
@@ -252,6 +254,7 @@ img {
 
 .team-card-item{
     display: flex;
+    flex-wrap: wrap;
     margin-left: -30px;
     margin-top: -30px;
 }
@@ -390,13 +393,16 @@ img {
     flex-basis: calc((100% - 90px) / 3);
     margin-left: 30px;
     margin-top: 30px;
-    border: 1px solid #EEEEEE;
 }
+
 .portfolio-container-cards-name{
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 24px;
-    margin-right: 24px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+    padding-right: 24px;
+    border-bottom: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
 }
 
 .project-name {
