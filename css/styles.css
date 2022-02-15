@@ -85,7 +85,7 @@ img {
 }
 
 .logo {
-    color: var(--logo-black-color);
+    color: var(--accent-color);
     font-family: Raleway;
     font-weight: bold;
     font-size: 26px;
@@ -94,8 +94,12 @@ img {
     margin-right: 93px;
 }
 
-.logo-color-part {
-    color: var(--accent-color);
+.logo-black-part {
+    color: var(--logo-black-color);
+}
+
+.logo-white-part{
+    color: var(--primary-white-color)
 }
 
 .nav-link{
@@ -143,8 +147,6 @@ img {
 /* ------START HERO------ */
 
 .hero-container{
-    padding-top: 200px;
-    padding-bottom: 200px; 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -152,6 +154,7 @@ img {
 
 .hero {
     background-color: var(--hero-background-color);
+    padding: 200px 0;
 }
 
 .main-title {
@@ -178,11 +181,13 @@ img {
     padding-right: 32px;
     padding-top: 10px;
     padding-bottom: 10px;
-    border: 1px solid var(--logo-black-color);
+    /* border: 1px solid var(); */
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
 }
 
 .hero-buttom:hover, .hero-buttom:focus{
-    background-color: var(--hero-btm-focus)
+    background-color: var(--hero-btm-focus);
 }
 /* ------END HERO------ */
 
@@ -237,7 +242,7 @@ img {
     flex-basis: calc((100% - 90px) / 3);
 }
 
-.direction-container{
+.direction {
     padding-top: 0px;
 }
 /* ------END direction------ */
@@ -293,7 +298,6 @@ img {
     line-height: 1.19;
     letter-spacing: 0.03em;
     text-align: center;
-    margin-bottom: 30px;
 }
 
 .team-member-wrapper{
@@ -305,7 +309,9 @@ img {
 /* ------START FOOTER------ */
 .footer{
     background-color: var(--hero-background-color);
+    padding: 60px 0;
 }
+    
 .footer-address{
     font-size: 14px;
     line-height: 1.71;
@@ -327,8 +333,6 @@ img {
 }
 
 .footer-container{
-    padding-top: 60px;
-    padding-bottom: 60px;
     display: flex; 
     flex-direction: column;  
 }
@@ -377,15 +381,11 @@ img {
     color: var(--primary-white-color);
 }
 
-.portfolio-container-button{
-    margin-bottom: 50px;
-}
-
 .portfolio-cards-list{
     background-color: var(--primary-white-color);
     display: flex;
     flex-wrap: wrap;
-    margin-top: -30px;
+    margin-top: -30px;  
     margin-left: -30px;
 }
 
